@@ -1,0 +1,39 @@
+{
+  "name": "simple_server_gateway",
+  "description": "Expose microservices under a joint port",
+  "license": "GPL-3.0",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axelkr/simple-server-gateway.git"
+  },
+  "scripts": {
+    "build": "webpack --env.production",
+    "buildDebug": "webpack",
+    "watch": "webpack --watch",
+    "start": "node ./dist/bundle.js",
+    "test": "jest",
+    "lint": "tslint -c ./tslint.json './src/**/*.ts[x]*'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@types/express": "^4.17.0",
+    "@types/request": "^2.48.2",
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
