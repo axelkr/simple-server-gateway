@@ -23,17 +23,17 @@
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@types/express": "^4.17.0",
+    "@types/express": "^4.17.1",
     "@types/request": "^2.48.2",
-    "@types/jest": "^24.0.17",
-    "@types/node": "^12.7.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
     "babel-loader": "^8.0.6",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "ts-jest": "^24.0.2",
     "ts-loader": "^6.0.4",
-    "tslint": "^5.18.0",
+    "tslint": "^5.19.0",
     "typescript": "^3.5.3",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   }
 }
