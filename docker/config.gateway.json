@@ -1,0 +1,7 @@
+{
+    "PORT" : 3000,
+    "ROUTES": [
+        { "route":"/backend*", "forwardTo" : "http://localhost:3006"},
+        { "route":"/", "forwardTo" : "http://localhost:3004"}
+    ]
+}

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "webpack --env.production",
+    "buildContainer":"docker build --rm -f \"docker/Dockerfile\" -t gateway:latest docker",
     "buildDebug": "webpack",
     "watch": "webpack --watch",
     "start": "node ./dist/bundle.js",
