@@ -15,4 +15,5 @@ COPY ./config.gateway.json gateway/config.json
 
 # run microservice
 EXPOSE 3000
+WORKDIR /usr/src/app/gateway
 CMD [ "node", "./dist/bundle.js" ]
