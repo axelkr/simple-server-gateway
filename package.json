@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "webpack --env.production",
-    "buildContainer":"docker build --rm -f \"docker/Dockerfile\" -t gateway:latest docker",
+    "buildContainer": "docker build --rm -f \"docker/Dockerfile\" -t gateway:latest docker",
+    "runContainer": "docker run --rm -it --network host gateway:latest",
     "buildDebug": "webpack",
     "watch": "webpack --watch",
     "start": "node ./dist/bundle.js",
@@ -21,9 +22,9 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@types/express": "^4.17.1",
     "@types/request": "^2.48.3",
     "@types/jest": "^24.0.18",
@@ -31,7 +32,7 @@
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
-    "ts-loader": "^6.1.0",
+    "ts-loader": "^6.1.2",
     "tslint": "^5.20.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
