@@ -1,7 +1,7 @@
 'use strict';
 
 import * as express from 'express';
-import * as request from 'request';
+import * as request from 'postman-request';
 import config from './config';
 
 const PORT = config.PORT;
@@ -14,7 +14,7 @@ routes.forEach((configuredRoute:any) => {
   const targetUrl = configuredRoute.forwardTo;
   app.use(route, (req,res) => {
     const newUrl = targetUrl+req.originalUrl;
-    request({url: newUrl, method:req.method,headers: req.headers, body:req.body}, (error, response, body) => {
+    request({url: newUrl, method:req.method,headers: req.headers, body:req.body}, (error:any, response:any, body:any) => {
       const errorOccurred = error !== null;
       if (errorOccurred) {
         res.status(500).send();
